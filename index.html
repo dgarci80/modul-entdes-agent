@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta
+      name="description"
+      content="Una introducció al mòdul Entorns de desenvolupament: les eines i els hàbits que acompanyen la creació de programari."
+    >
+    <title>Entorns de desenvolupament — Una introducció</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contingut">Ves al contingut</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inici" aria-label="Entorns de desenvolupament, inici">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>ED<span class="brand-separator">/</span>01</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegació principal">
+        <a href="#modul">El mòdul</a>
+        <a href="#eines">Les eines</a>
+        <a href="#proces">El procés</a>
+      </nav>
+      <a class="header-link" href="#modul">Comença aquí <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="contingut">
+      <section class="hero" id="inici" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Una introducció al mòdul</p>
+          <h1 id="hero-title">El lloc on<br>el codi <span>pren forma.</span></h1>
+          <p class="hero-description">
+            Escriure programari és més que redactar línies de codi. És preparar
+            les eines, entendre què passa per sota i trobar maneres de treballar
+            millor, pas a pas.
+          </p>
+          <a class="button" href="#modul">Explora el mòdul <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Il·lustració d'un editor de codi amb una funció d'exemple">
+          <div class="art-caption"><span>ENTORN</span><span>01 — 03</span></div>
+          <div class="editor-window">
+            <div class="editor-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>projecte / inici.js</span>
+              <span class="editor-status">● DESAT</span>
+            </div>
+            <div class="code-area" aria-hidden="true">
+              <span class="line-number">01</span><span><b>const</b> idea = <em>"programari"</em>;</span>
+              <span class="line-number">02</span><span></span>
+              <span class="line-number">03</span><span><b>function</b> <strong>crear</strong>(idea) {</span>
+              <span class="line-number">04</span><span>&nbsp;&nbsp;<i>provar</i>(idea);</span>
+              <span class="line-number">05</span><span>&nbsp;&nbsp;<i>millorar</i>(idea);</span>
+              <span class="line-number">06</span><span>&nbsp;&nbsp;<b>return</b> <em>"fet!"</em>;</span>
+              <span class="line-number">07</span><span>}</span>
+              <span class="line-number">08</span><span></span>
+              <span class="line-number">09</span><span>crear(idea)<span class="cursor" aria-hidden="true"></span></span>
+            </div>
+          </div>
+          <div class="art-note"><span class="note-index">A.</span><span>Un bon entorn no escriu per tu.<br>T’ajuda a pensar millor.</span></div>
+          <span class="orbit orbit-one" aria-hidden="true"></span>
+          <span class="orbit orbit-two" aria-hidden="true"></span>
+        </div>
+
+        <div class="hero-meta" aria-label="Temes del mòdul">
+          <span>01 <b>·</b> Eines</span>
+          <span>02 <b>·</b> Procés</span>
+          <span>03 <b>·</b> Col·laboració</span>
+        </div>
+      </section>
+
+      <section class="intro section-wrap" id="modul" aria-labelledby="module-title">
+        <div class="section-label"><span>01</span> / EL MÒDUL</div>
+        <div class="intro-content">
+          <h2 id="module-title">Construir bé comença<br>abans de programar.</h2>
+          <div class="intro-text">
+            <p>
+              Un entorn de desenvolupament és el conjunt d’eines i recursos que
+              fem servir per crear, executar i mantenir programes. En aquest
+              mòdul descobriràs com encaixen aquestes peces i com poden fer més
+              clar i fiable el teu treball.
+            </p>
+            <p>
+              L’objectiu no és aprendre una eina de memòria, sinó entendre per
+              què la fem servir i triar el recurs adequat per a cada moment:
+              escriure codi, detectar errors, provar canvis o compartir-los.
+            </p>
+          </div>
+        </div>
+        <div class="principles" aria-label="Idees clau">
+          <article class="principle">
+            <span class="principle-number">01</span>
+            <h3>Entendre</h3>
+            <p>Identifica per a què serveix cada eina i com es relaciona amb el codi.</p>
+          </article>
+          <article class="principle">
+            <span class="principle-number">02</span>
+            <h3>Experimentar</h3>
+            <p>Prova, observa els resultats i aprèn a partir dels errors.</p>
+          </article>
+          <article class="principle">
+            <span class="principle-number">03</span>
+            <h3>Millorar</h3>
+            <p>Organitza la feina perquè sigui més fàcil de revisar i reprendre.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tools-section" id="eines" aria-labelledby="tools-title">
+        <div class="section-wrap">
+          <div class="section-label section-label-light"><span>02</span> / LES EINES</div>
+          <div class="tools-heading">
+            <h2 id="tools-title">Cada eina té<br>el seu moment.</h2>
+            <p>No cal començar amb tot. Aquestes són algunes peces habituals d’un entorn de desenvolupament.</p>
+          </div>
+          <div class="tool-grid">
+            <article class="tool-card">
+              <span class="tool-index">EINA — 01</span>
+              <div class="tool-symbol symbol-editor" aria-hidden="true"><span>_</span><span>&lt;/&gt;</span></div>
+              <h3>Editor de codi</h3>
+              <p>El lloc on escrius i organitzes els fitxers del programa.</p>
+              <span class="tool-tag">ESCRIURE</span>
+            </article>
+            <article class="tool-card">
+              <span class="tool-index">EINA — 02</span>
+              <div class="tool-symbol symbol-terminal" aria-hidden="true"><span>›_</span></div>
+              <h3>Terminal</h3>
+              <p>Una manera directa d’executar instruccions i eines del sistema.</p>
+              <span class="tool-tag">EXECUTAR</span>
+            </article>
+            <article class="tool-card">
+              <span class="tool-index">EINA — 03</span>
+              <div class="tool-symbol symbol-debug" aria-hidden="true"><span>✳</span></div>
+              <h3>Depurador</h3>
+              <p>T’ajuda a seguir l’execució i investigar per què apareix un error.</p>
+              <span class="tool-tag">INVESTIGAR</span>
+            </article>
+            <article class="tool-card">
+              <span class="tool-index">EINA — 04</span>
+              <div class="tool-symbol symbol-version" aria-hidden="true"><span>⑂</span></div>
+              <h3>Control de versions</h3>
+              <p>Registra els canvis perquè puguis revisar-los i col·laborar.</p>
+              <span class="tool-tag">COL·LABORAR</span>
+            </article>
+          </div>
+          <p class="tools-footnote"><span aria-hidden="true">✳</span> Les eines concretes poden variar segons el llenguatge i el projecte.</p>
+        </div>
+      </section>
+
+      <section class="process section-wrap" id="proces" aria-labelledby="process-title">
+        <div class="section-label"><span>03</span> / EL PROCÉS</div>
+        <div class="process-heading">
+          <h2 id="process-title">Un cicle per<br>aprendre fent.</h2>
+          <p>Desenvolupar programari és un procés iteratiu. Cada pas t’acosta a una solució més clara.</p>
+        </div>
+        <ol class="process-steps">
+          <li><span class="step-number">01</span><span class="step-name">Prepara</span><span class="step-detail">Organitza el projecte</span><span class="step-arrow" aria-hidden="true">↗</span></li>
+          <li><span class="step-number">02</span><span class="step-name">Escriu</span><span class="step-detail">Expressa una idea en codi</span><span class="step-arrow" aria-hidden="true">↗</span></li>
+          <li><span class="step-number">03</span><span class="step-name">Executa i prova</span><span class="step-detail">Comprova què passa</span><span class="step-arrow" aria-hidden="true">↗</span></li>
+          <li><span class="step-number">04</span><span class="step-name">Revisa i millora</span><span class="step-detail">Aprèn del resultat</span><span class="step-arrow" aria-hidden="true">↗</span></li>
+        </ol>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="closing-inner">
+          <span class="closing-mark" aria-hidden="true">&lt;?&gt;</span>
+          <p class="eyebrow">Una bona pregunta és un bon començament</p>
+          <h2 id="closing-title">Què passa si<br>ho proves?</h2>
+          <a href="#inici" class="closing-link">Torna a l’inici <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inici">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>ED<span class="brand-separator">/</span>01</span>
+      </a>
+      <span>Entorns de desenvolupament</span>
+      <span>Aprendre · provar · crear</span>
+    </footer>
+  </body>
+</html>
