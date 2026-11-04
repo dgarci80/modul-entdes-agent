@@ -702,6 +702,75 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
+.contact-section {
+  padding-top: 5.5rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid var(--line);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 0.75fr);
+  align-items: end;
+  gap: 4rem;
+  margin-top: 2.8rem;
+}
+
+.contact-content h2 {
+  margin-bottom: 0;
+  font-size: clamp(2.6rem, 5.1vw, 5rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.contact-copy > p {
+  max-width: 410px;
+  margin: 1.2rem 0 0;
+  color: #686d63;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+.contact-link {
+  display: grid;
+  min-height: 120px;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 12px;
+  background: var(--night);
+  color: #f3f4ed;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  background: #2b382d;
+}
+
+.contact-link-label {
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.07em;
+}
+
+.contact-email {
+  font-family: var(--display);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  color: var(--green);
+  font-size: 1.3rem;
+}
+
 .projects-heading {
   display: flex;
   align-items: end;
@@ -932,9 +1001,14 @@ h2 {
   .tools-heading,
   .process-heading,
   .projects-heading,
-  .intro-content {
+  .intro-content,
+  .contact-content {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .contact-content {
+    gap: 2rem;
   }
 
   .tool-grid {
@@ -994,6 +1068,25 @@ h2 {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .contact-content {
+    gap: 1.8rem;
+    margin-top: 2.3rem;
+  }
+
+  .contact-content h2 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+
+  .contact-link {
+    min-height: 104px;
+    padding: 1.25rem;
   }
 
   .process-steps li {
